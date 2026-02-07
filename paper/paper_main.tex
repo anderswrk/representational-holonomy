@@ -26,15 +26,16 @@ Anders Olsson\thanks{Independent researcher. Correspondence: \texttt{anders@kliv
 
 \date{February 2026}
 
+\emergencystretch=1.5em
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-We present a geometric framework for testing whether transformer language models contain internal state variation not determined by the output distribution.
-We formalize this using a fiber bundle perspective: the projection from hidden states to output distributions may be many-to-one, with fibers encoding path-dependent information.
-We derive gauge-invariant observables, classify computable quantities by their transformation properties, and define a four-criterion diagnostic for representational holonomy---path-dependent internal divergence that persists under matched output distributions.
-We apply the full diagnostic suite to Phi-2 (2.7B parameters) under a controlled path-manipulation protocol.
+I present a geometric framework for testing whether transformer language models contain internal state variation not determined by the output distribution.
+I formalize this using a fiber bundle perspective: the projection from hidden states to output distributions may be many-to-one, with fibers encoding path-dependent information.
+I derive gauge-invariant observables, classify computable quantities by their transformation properties, and define a four-criterion diagnostic for representational holonomy---path-dependent internal divergence that persists under matched output distributions.
+I apply the full diagnostic suite to Phi-2 (2.7B parameters) under a controlled path-manipulation protocol.
 All experiments return negative results: output-layer geometry reduces to entropy (Experiment~0), path dependence is visible in the output distribution, failing the matched-output condition required for holonomy (Experiment~1), and intermediate-layer divergence reflects subspace rotation rather than information compression (Experiment~2).
 The primary contribution is a falsifiable, reusable diagnostic framework for detecting hidden representational structure in autoregressive transformers.
 \end{abstract}
@@ -46,11 +47,11 @@ The primary contribution is a falsifiable, reusable diagnostic framework for det
 When a transformer language model processes a prompt, its internal state---a high-dimensional activation vector at each layer---determines a probability distribution over next tokens. A natural question arises: does the internal state carry information \emph{beyond} what the output distribution reveals?
 
 This question has practical implications for interpretability (are there ``hidden'' features that probing the output misses?), for alignment (can a model's internal state diverge from its expressed behavior?), and for the broader study of representational dynamics in deep networks.
-It also connects to longstanding questions in philosophy of mind about whether internal states have structure beyond their functional role, though we do not pursue that connection here.
+It also connects to longstanding questions in philosophy of mind about whether internal states have structure beyond their functional role, though I do not pursue that connection here.
 
-We do not claim that representational holonomy is expected in current models; rather, we formalize the conditions under which it would exist and provide a reusable diagnostic for testing those conditions empirically.
+I do not claim that representational holonomy is expected in current models; rather, I formalize the conditions under which it would exist and provide a reusable diagnostic for testing those conditions empirically.
 
-We formalize the question geometrically.
+I formalize the question geometrically.
 Let $\mathcal{Z}$ denote the manifold of hidden states and $\mathcal{Q}$ the simplex of output distributions.
 The model defines a smooth map $\varphi: \mathcal{Z} \to \mathcal{Q}$.
 If $\varphi$ is injective (up to the relevant equivalence), the output determines the internal state---there is no hidden structure.
@@ -65,7 +66,7 @@ The residual displacement in the fiber is holonomy, and its detection requires:
     \item Measurable internal divergence (the fiber coordinate has shifted).
 \end{enumerate}
 
-In this paper, we develop the mathematical framework (\S\ref{sec:framework}), classify observables by their gauge-invariance properties (\S\ref{sec:gauge}), define a four-criterion diagnostic for holonomy (\S\ref{sec:diagnostics}), report three experiments on Phi-2 (\S\ref{sec:experiments}), and discuss what a positive result would require (\S\ref{sec:discussion}).
+In this paper, I develop the mathematical framework (\S\ref{sec:framework}), classify observables by their gauge-invariance properties (\S\ref{sec:gauge}), define a four-criterion diagnostic for holonomy (\S\ref{sec:diagnostics}), report three experiments on Phi-2 (\S\ref{sec:experiments}), and discuss what a positive result would require (\S\ref{sec:discussion}).
 
 %% ============================================================================
 \section{Geometric Framework}
@@ -142,12 +143,12 @@ Meaningful geometric quantities must be invariant under such transformations, or
 
 \subsection{Three-Tier Classification}
 
-We classify computable observables by their transformation behavior:
+I classify computable observables by their transformation behavior:
 
 \begin{description}[nosep, leftmargin=1.5em]
     \item[Tier 1 (GL($d$)-invariant):] Quantities computed entirely from output distributions. These include $d_\mathrm{FR}(p, q)$, the probe divergence $H = \mathbb{E}_i[d_\mathrm{FR}(p(C_A \oplus \delta_i), p(C_B \oplus \delta_i))]$, Shannon entropy $H(p)$, and behavioral signatures. No dependence on activation coordinates.
 
-    \item[Tier 2 (GL($d$)-invariant with reference):] Spectral features of the \emph{whitened} metric $\hat{G} = M^{-1/2} G \, M^{-1/2}$, where $M = \mathbb{E}_\mathrm{probe}[G(z)]$ is the probe-averaged metric. Under $z' = Az$, both $G$ and $M$ transform by congruence ($G' = A^{-\top}GA^{-1}$), so $\hat{G}$ undergoes a similarity transform and its eigenvalues are $\mathrm{GL}(d)$-invariant. Equivalently, the generalized eigenvalues of $(G, M)$ are coordinate-free.
+    \item[Tier 2 (GL($d$)-invariant with reference):] Spectral features of the \emph{whitened} metric $\hat{G} = M^{-1/2} G \, M^{-1/2}$, where $M = \mathbb{E}_\mathrm{probe}[G(z)]$ is the probe-averaged metric. Under $z' = Az$, both $G$ and $M$ transform by congruence ($G' = A^{-\top}GA^{-1}$), so $\hat{G}$ undergoes a similarity transform and its eigenvalues are $\mathrm{GL}(d)$-invariant. Equivalently, the generalized eigenvalues of~$(G, M)$ are coordinate-free.
 
     \item[Tier 3 (chart-dependent):] Raw eigenvalues of $G$, activation norms $\|z_A - z_B\|$, cosine distances between activations. Useful for within-model diagnostics but not meaningful across coordinate systems.
 \end{description}
@@ -164,7 +165,7 @@ Setting $v = A^{-1}v'$, this is the original eigenvalue problem with the same $\
 
 \subsection{Regularization}
 
-When $M$ is singular, we compute generalized eigenvalues of $(G, M)$ restricted to $\mathrm{range}(M)$, discarding directions where $\lambda_M < \varepsilon$.
+When $M$ is singular, I compute generalized eigenvalues of $(G, M)$ restricted to $\mathrm{range}(M)$, discarding directions where $\lambda_M < \varepsilon$.
 Adding $\lambda_0 I$ for regularization breaks $\mathrm{GL}(d)$-invariance since $I$ does not co-transform under congruence.
 Valid alternatives: (a) pseudoinverse on the support of $M$, or (b) regularize with a co-transforming reference $M_\mathrm{reg} = \mathbb{E}_\mathrm{probe}[G] + \lambda_0 \cdot G_\mathrm{ref}$ where $G_\mathrm{ref}$ is the metric at a fixed reference distribution.
 
@@ -172,7 +173,7 @@ Valid alternatives: (a) pseudoinverse on the support of $M$, or (b) regularize w
 \section{Diagnostic Toolkit}
 \label{sec:diagnostics}
 
-We define a four-criterion test for representational holonomy.
+I define a four-criterion test for representational holonomy.
 A model \emph{passes} if all four criteria are satisfied for a given path-manipulation protocol.
 
 \subsection{Protocol: The Bank Experiment}
@@ -212,7 +213,7 @@ Note: in high-dimensional settings with small sample sizes, linear separability 
 \begin{criterion}[LM-head null-space storage]
 \label{crit:nullspace}
 Let $z$ be the final-layer activation at the target token, and let $\hat{w}$ be a fixed unit vector in the final-layer activation space that separates paths A and B.
-We define $\hat{w}$ as the normalized mean-difference direction: $w = \mathbb{E}[z \mid A] - \mathbb{E}[z \mid B]$, $\hat{w} = w / \|w\|$.
+I define $\hat{w}$ as the normalized mean-difference direction: $w = \mathbb{E}[z \mid A] - \mathbb{E}[z \mid B]$, $\hat{w} = w / \|w\|$.
 Define the scrubbed activation $z' = z - (z^\top \hat{w})\hat{w}$ and recompute the output distribution via $p' = \mathrm{softmax}(Uz' + b)$.
 If the scrubbing distance satisfies $d_\mathrm{FR}(p, p') < 0.01$, the path information is consistent with storage in an approximate functional null space of the LM head---present in $z$ but not used for next-token prediction.
 This is the strongest evidence for hidden fiber structure.
@@ -250,7 +251,11 @@ Each experiment includes mandatory controls:
 \label{sec:experiments}
 
 All experiments use Phi-2 (2.7B parameters; \citealt{phi2}) in half-precision on a single RTX 3080 (10GB).
-Code is available at \url{https://github.com/anderswrk/representational-holonomy}.
+Code is available at:
+
+\smallskip
+\noindent\url{https://github.com/anderswrk/representational-holonomy}
+\smallskip
 
 \subsection{Experiment 0: Output-Layer Geometry vs.\ Entropy}
 
@@ -345,12 +350,12 @@ Phi-2 does not compress away path information between intermediate layers and ou
 \subsection{Summary of Results}
 
 \begin{center}
-\begin{tabular}{p{3.5cm}cccc}
+\small
+\begin{tabular}{p{2.5cm}p{2.2cm}p{4.2cm}p{2.2cm}p{2.2cm}}
 \toprule
- & \textbf{Criterion 1} & \textbf{Criterion 2} & \textbf{Criterion 3} & \textbf{Criterion 4} \\
- & FR gate & Profile bulge & Probe drop & Null-space \\
+ & \textbf{Criterion 1} \newline FR gate & \textbf{Criterion 2} \newline Profile bulge & \textbf{Criterion 3} \newline Probe drop & \textbf{Criterion 4} \newline Null-space \\
 \midrule
-Required for holonomy & $d_\mathrm{FR} < \tau$ & ratio $> 1.2$ & acc drop $> 0.05$ & $d_\mathrm{FR}^\mathrm{scrub} < 0.01$ \\
+Required for holonomy & $d_\mathrm{FR} < \tau$ & ratio $> 1.2$ & acc drop $> 0.05$ & $d_\mathrm{FR}^\mathrm{scrub} < 0.01$ \\[4pt]
 Phi-2 result & \textcolor{red}{FAIL} (0.33) & \textcolor{orange}{PASS raw} (2.40$\times$); \textcolor{orange}{WEAK PASS} after recency ctrl (1.22$\times$) & \textcolor{red}{FAIL} (0.000 drop) & \textcolor{red}{FAIL} (0.113) \\
 \bottomrule
 \end{tabular}
@@ -390,7 +395,7 @@ Concretely, a model would need to:
 \subsection{Connections to Related Work}
 
 The pullback metric construction connects to work on representation geometry in neural networks \citep{zavatone2023riemannian}, information geometry of statistical models \citep{amari2016information}, and the study of how information flows through transformer layers \citep{voita2019analyzing, geva2023dissecting}.
-The fiber bundle formalism relates to work on symmetries and equivariance in deep learning \citep{bronstein2021geometric}, though our focus is on emergent (not engineered) structure.
+The fiber bundle formalism relates to work on symmetries and equivariance in deep learning \citep{bronstein2021geometric}, though my focus is on emergent (not engineered) structure.
 
 The gauge-invariance analysis addresses a widespread issue in the representations literature: many reported geometric features of neural network activations depend on the (arbitrary) choice of basis and are therefore not intrinsic properties of the network's computation.
 
@@ -409,7 +414,7 @@ The diagnostic toolkit also connects to causal intervention methods in interpret
 \subsection{Broader Implications}
 
 The fiber bundle formalism was originally motivated by broader questions about the relationship between internal structure and functional behavior in information-processing systems.
-We have restricted this paper to representational dynamics in transformer models.
+I have restricted this paper to representational dynamics in transformer models.
 The diagnostic toolkit measures a specific, well-defined property (path-dependent internal state variation not captured by output distributions) that is of independent interest for interpretability and alignment research, regardless of any philosophical interpretation.
 Any broader implications require additional assumptions not addressed here.
 
@@ -417,7 +422,7 @@ Any broader implications require additional assumptions not addressed here.
 \section{Conclusion}
 \label{sec:conclusion}
 
-We have presented a geometric framework for detecting hidden representational structure in transformers, formalized as fiber bundle holonomy.
+I have presented a geometric framework for detecting hidden representational structure in transformers, formalized as fiber bundle holonomy.
 The framework yields gauge-invariant observables, a three-tier classification of computable quantities, and a four-criterion diagnostic test.
 Applied to Phi-2 (2.7B), all three experiments return negative results: the model does not exhibit the lossy projection from internal states to output distributions that nontrivial fiber structure requires.
 
@@ -434,7 +439,7 @@ The four criteria are:
 \end{enumerate}
 
 Phi-2 fails criteria 1, 3, and 4.
-We provide this diagnostic toolkit so that as models scale, the emergence of hidden internal structure---should it appear---can be detected rigorously, distinguishing true representational holonomy from spectral artifacts and recency effects.
+I provide this diagnostic toolkit so that as models scale, the emergence of hidden internal structure---should it appear---can be detected rigorously, distinguishing true representational holonomy from spectral artifacts and recency effects.
 
 %% ============================================================================
 
@@ -445,6 +450,7 @@ The author thanks Claude Opus 4.6 (Anthropic) and ChatGPT 5.2 (OpenAI) for subst
 %% ============================================================================
 
 \appendix
+\begin{sloppypar}
 \section{Implementation Details}
 \label{app:implementation}
 
@@ -459,11 +465,13 @@ Loaded via HuggingFace \texttt{transformers} with \texttt{trust\_remote\_code=Tr
 
 \textbf{Experiment 1 (Bank):} 16 path pairs (4 financial $\times$ 4 nature paragraphs). Formatting washout $\approx$130 tokens. FR gate thresholds: $\{0.02, 0.05, 0.1\}$ with bottom-25\% fallback. 30 probes across 4 categories measured via KV-cache reuse. Sense-check probe tokens validated as single-token BPE encodings. Bootstrap confidence intervals: 1000 resamples, seed 42.
 
-\textbf{Experiment 2 (Layers):} All 16 pairs forwarded with \texttt{output\_hidden\_states=True}. Activations extracted at the final token position of the target string. Linear probe: \texttt{sklearn.linear\_model.LogisticRegression}, $C \in \{0.01, 0.1\}$, \texttt{solver="lbfgs"}, \texttt{max\_iter=1000}. Leave-one-group-out cross-validation (groups = pairs). Features standardized per fold. LM-head scrubbing: path direction $\hat{w}$ computed as the normalized mean-difference direction $w = \bar{z}_A - \bar{z}_B$, $\hat{w} = w/\|w\|$ at layer 32; scrubbed activation $z' = z - (z^\top \hat{w})\hat{w}$; output distribution recomputed via \texttt{lm\_head}. Recency control: 200-token neutral suffix (technical/data-serialization text, verbatim in repository) appended between washout and target.
+\textbf{Experiment 2 (Layers):} All 16 pairs forwarded with \texttt{output\_hidden\_states=True}. Activations extracted at the final token position of the target string. Linear probe: \texttt{sklearn.linear\_model.Logistic\-Regression}, $C \in \{0.01, 0.1\}$, \texttt{solver="lbfgs"}, \texttt{max\_iter=1000}. Leave-one-group-out cross-validation (groups = pairs). Features standardized per fold. LM-head scrubbing: path direction $\hat{w}$ computed as the normalized mean-difference direction $w = \bar{z}_A - \bar{z}_B$, $\hat{w} = w/\|w\|$ at layer 32; scrubbed activation $z' = z - (z^\top \hat{w})\hat{w}$; output distribution recomputed via \texttt{lm\_head}. Recency control: 200-token neutral suffix (technical/data-serialization text, verbatim in repository) appended between washout and target.
 
 \textbf{Code:} Available at \url{https://github.com/anderswrk/representational-holonomy}.
 
 %% ============================================================================
+
+\end{sloppypar}
 
 \bibliographystyle{plainnat}
 \bibliography{references}
