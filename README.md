@@ -8,7 +8,7 @@ Code and results for testing whether transformer language models contain interna
 
 **Experiment 1 (Bank Experiment -- Representational Hysteresis):** Genuine path dependence exists in hidden states: finance-first and nature-first context orderings produce distinguishable internal representations even after a washout paragraph. However, output distributions do not match well enough for the Fisher-Rao gate to pass at strict thresholds, and where they do pass, probe divergence does not exceed control baselines. No evidence of holonomy.
 
-**Experiment 3 (Intermediate Layer Divergence):** Path-dependent divergence is real at intermediate layers but reflects subspace rotation rather than information compression. A linear probe decodes path identity at 100% accuracy at every layer. The LM head projection analysis (Experiment 3b) confirms the model functionally uses this path information -- scrubbing it changes output logits. The divergence is not discarded; it is carried through and used. This is the opposite of what fiber structure requires.
+**Experiment 2 (Intermediate Layer Divergence):** Path-dependent divergence is real at intermediate layers but reflects subspace rotation rather than information compression. A linear probe decodes path identity at 100% accuracy at every layer. The LM head projection analysis (Experiment 2b) confirms the model functionally uses this path information -- scrubbing it changes output logits. The divergence is not discarded; it is carried through and used. This is the opposite of what fiber structure requires.
 
 ## Repository Structure
 
@@ -21,6 +21,7 @@ experiment3_layers.py       Experiment 3: intermediate layer divergence profile
 experiment3_controls.py     Controls A-D for Experiment 3
 experiment3b_projection.py  Experiment 3b: LM-head projection and recency control
 results/                    CSV data, JSON summaries, and PNG plots
+# Note: files named experiment3_* correspond to Experiment 2 in the paper
 ```
 
 ## Running the Experiments
@@ -45,9 +46,9 @@ python experiment0.py              # Experiment 0: d_eff vs entropy
 python experiment0_controls.py     # Controls for Experiment 0
 
 python bank_experiment.py          # Experiment 1: bank/holonomy test (run this first)
-python experiment3_layers.py       # Experiment 3: layer divergence profile
-python experiment3_controls.py     # Controls for Experiment 3
-python experiment3b_projection.py  # Experiment 3b: LM-head projection + recency
+python experiment3_layers.py       # Experiment 2 (paper): layer divergence profile
+python experiment3_controls.py     # Controls for Experiment 2 (paper)
+python experiment3b_projection.py  # Experiment 2b (paper): LM-head projection + recency
 ```
 
 `bank_experiment.py` must run before the Experiment 3 scripts because they import shared data definitions (paragraph lists, washout text, context builder) from it.
@@ -65,14 +66,16 @@ Manuscript in preparation.
 ## Citation
 
 ```
-@misc{consciousness-geometry-2026,
-  author = {TODO},
+@article{olsson2026holonomy,
+  author = {Olsson, Anders},
   title  = {Gauge-Invariant Diagnostics for Hidden Representational Structure in Transformer Language Models},
   year   = {2026},
-  note   = {Manuscript in preparation}
+  note   = {Preprint}
 }
 ```
 
 ## License
 
-TODO
+MIT License
+
+See [LICENSE](LICENSE) for details.
