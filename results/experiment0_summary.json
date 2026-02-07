@@ -1,0 +1,37 @@
+{
+  "n_datapoints": 748,
+  "topk": 512,
+  "pearson_deff_Hp": 0.9357952407105139,
+  "spearman_deff_Hp": 0.9475346216917081,
+  "pearson_deff_Hp_tempered": 0.8942338103828893,
+  "matched_entropy_threshold_nats": 0.1,
+  "matched_entropy_n_pairs": 233,
+  "matched_entropy_n_prompts": 25,
+  "matched_entropy_t_stat": 2.843755865392492,
+  "matched_entropy_mean_delta": 0.12023397556463031,
+  "mean_residual_by_category": {
+    "ambiguous": 0.10681532396806222,
+    "code": -0.2911564802945832,
+    "creative": 0.04803047066439181,
+    "factual": 0.05043332485008983,
+    "noise": -0.058812653412974286,
+    "noise_shuffled": -0.062076794256926075,
+    "philosophical": 0.1825670715951028,
+    "reasoning": 0.12430553236489872,
+    "rote": 0.07608639953866335,
+    "self_referential": 0.051358530010026965
+  },
+  "std_residual_by_category": {
+    "ambiguous": 0.3989202155891616,
+    "code": 0.6540983154350367,
+    "creative": 0.34489872184550285,
+    "factual": 0.47101346709778646,
+    "noise": 0.3112819278760202,
+    "noise_shuffled": 0.22596529257486414,
+    "philosophical": 0.38087809273975054,
+    "reasoning": 0.3290864190017722,
+    "rote": 0.5707590476041663,
+    "self_referential": 0.3338780346831371
+  },
+  "verdict": "DIVERGENT"
+}

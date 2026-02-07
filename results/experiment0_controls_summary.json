@@ -1,0 +1,92 @@
+{
+  "gauge_invariance_max_diff": 0.00016245245933532715,
+  "gauge_invariance_pass": "True",
+  "pattern_correlation_real_vs_perm": 0.8688550397238036,
+  "category_spread_real": 0.4719169185518447,
+  "category_spread_perm": 0.557177030432195,
+  "range_ratio": 1.1806676313745756,
+  "n_permutations": 3,
+  "verdict": "ARTIFACT \u2014 pattern survives permutation, driven by W's spectrum",
+  "category_stats": [
+    {
+      "category": "ambiguous",
+      "residual_real": 0.10204568567482919,
+      "residual_perm_mean": 0.1380172425934643,
+      "residual_perm_std": 0.01773375571340557,
+      "residual_rot": 0.10204630056991536,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "code",
+      "residual_real": -0.29172137114676433,
+      "residual_perm_mean": -0.30654218352593626,
+      "residual_perm_std": 0.01632013986460008,
+      "residual_rot": -0.291718000465503,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "creative",
+      "residual_real": 0.04768362573695354,
+      "residual_perm_mean": 0.031314871827908236,
+      "residual_perm_std": 0.007018941774932298,
+      "residual_rot": 0.04768213653217758,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "factual",
+      "residual_real": 0.04448232938122672,
+      "residual_perm_mean": 0.062016800625451285,
+      "residual_perm_std": 0.0043472485782777215,
+      "residual_rot": 0.0444824161151501,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "noise",
+      "residual_real": -0.06857050661467116,
+      "residual_perm_mean": -0.0379714155091213,
+      "residual_perm_std": 0.010244463565563501,
+      "residual_rot": -0.06857053828659142,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "noise_shuffled",
+      "residual_real": -0.04496436278633798,
+      "residual_perm_mean": -0.10614642763639363,
+      "residual_perm_std": 0.017155742430411552,
+      "residual_rot": -0.04496413938912985,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "philosophical",
+      "residual_real": 0.1801955474050804,
+      "residual_perm_mean": 0.09686747289104854,
+      "residual_perm_std": 0.008300322647629326,
+      "residual_rot": 0.18019568254688859,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "reasoning",
+      "residual_real": 0.12364585044956272,
+      "residual_perm_mean": 0.07264593064445508,
+      "residual_perm_std": 0.010866042429656326,
+      "residual_rot": 0.1236450062751567,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "rote",
+      "residual_real": 0.07611922493627186,
+      "residual_perm_mean": 0.2506348469062588,
+      "residual_perm_std": 0.01559436574176275,
+      "residual_rot": 0.07611721310776738,
+      "signal_survives_perm": "True"
+    },
+    {
+      "category": "self_referential",
+      "residual_real": 0.053252892545668264,
+      "residual_perm_mean": -0.004825414493070531,
+      "residual_perm_std": 0.010299441602385719,
+      "residual_rot": 0.053252827742319035,
+      "signal_survives_perm": "False"
+    }
+  ]
+}

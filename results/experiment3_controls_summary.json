@@ -1,0 +1,38 @@
+{
+  "conditions": {
+    "Bank (path-order)": {
+      "peak_layer": 16,
+      "peak_cosine": 0.02845575660467148,
+      "output_cosine": 0.011845909059047699,
+      "ratio": 2.4021589616153154
+    },
+    "Ctrl A (diff topic)": {
+      "peak_layer": 10,
+      "peak_cosine": 0.3062237314879894,
+      "output_cosine": 0.2710213214159012,
+      "ratio": 1.1298879729763684
+    },
+    "Ctrl B (same-topic)": {
+      "peak_layer": 32,
+      "peak_cosine": 0.11725866297880809,
+      "output_cosine": 0.11725866297880809,
+      "ratio": 1.0
+    },
+    "Ctrl C (shuffled)": {
+      "peak_layer": 16,
+      "peak_cosine": 0.03084268420934677,
+      "output_cosine": 0.014575820416212082,
+      "ratio": 2.1160170287939146
+    }
+  },
+  "probe": {
+    "peak_layer_acc": 1,
+    "peak_accuracy": 1.0,
+    "output_accuracy": 1.0,
+    "accuracy_drop": 0.0,
+    "peak_layer_auc": 1,
+    "peak_auc": 1.0,
+    "output_auc": 1.0,
+    "auc_drop": 0.0
+  }
+}

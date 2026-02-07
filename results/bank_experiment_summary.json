@@ -1,0 +1,133 @@
+{
+  "n_pairs_total": 16,
+  "n_pairs_gated": 4,
+  "fr_thresholds": {
+    "0.02": 0,
+    "0.05": 0,
+    "0.1": 0
+  },
+  "selected_threshold": "bottom_25%(<=0.3308)",
+  "fr_stats": {
+    "mean": 0.3860621564090252,
+    "median": 0.39576420187950134,
+    "max": 0.5193798542022705,
+    "min": 0.24866411089897156
+  },
+  "H_overall": 1.6459104371441449,
+  "H_overall_ci": [
+    1.2045541738218162,
+    2.087266700466474
+  ],
+  "H_by_category": {
+    "finance": {
+      "mean": 1.7042812462896109,
+      "ci": [
+        1.3108831830322742,
+        2.0976793095469475
+      ]
+    },
+    "nature": {
+      "mean": 1.6392420455813408,
+      "ci": [
+        1.4227291401475668,
+        1.76717085018754
+      ]
+    },
+    "neutral": {
+      "mean": 1.7996938563883305,
+      "ci": [
+        1.4979204311966896,
+        2.1014672815799713
+      ]
+    },
+    "minimal": {
+      "mean": 1.3719293213750159,
+      "ci": [
+        0.24867347615266527,
+        2.4951851665973663
+      ]
+    }
+  },
+  "H_per_pair": {
+    "0": 1.3329843088732256,
+    "3": 2.0621858557065327,
+    "8": 1.0761240387704067,
+    "9": 2.112347545226415
+  },
+  "controls": {
+    "C1a_true_floor": 0.00011508899236408372,
+    "C1b_pipeline_repeatability": 0.00022622875597638387,
+    "C1_noise_floor": 0.00022622875597638387,
+    "C2_perturbed_washout": 0.7223469491795792,
+    "C3_disambiguated": 1.379657402112692,
+    "C4_signed_interaction_delta": 1.832923173904419,
+    "C4_signed_interaction_ci": [
+      1.0965793132781982,
+      2.6120781898498535
+    ],
+    "C4_excludes_zero": true
+  },
+  "js_stats": {
+    "mean": 0.3031271463725716,
+    "std": 0.18687131559212708,
+    "median": 0.30673403292894363
+  },
+  "criteria": {
+    "crit_1_above_noise": true,
+    "crit_2_above_c2_x1.5": true,
+    "crit_3_interaction": true,
+    "crit_4_disambig": false,
+    "n_pass": 3
+  },
+  "washout_sweep": [
+    {
+      "washout_tokens": 50,
+      "d_fr_target": 0.29902517795562744,
+      "H_mean": 1.976921260356903,
+      "H_std": 0.36374033132311134
+    },
+    {
+      "washout_tokens": 100,
+      "d_fr_target": 0.3512820303440094,
+      "H_mean": 1.717643789947033,
+      "H_std": 0.6312686370576669
+    },
+    {
+      "washout_tokens": 150,
+      "d_fr_target": 0.25136035680770874,
+      "H_mean": 1.518294334411621,
+      "H_std": 0.6159799670685341
+    },
+    {
+      "washout_tokens": 200,
+      "d_fr_target": 0.5078799724578857,
+      "H_mean": 1.7717924639582634,
+      "H_std": 0.5812337535227876
+    }
+  ],
+  "washout_type_sweep": [
+    {
+      "washout_type": "formatting",
+      "d_fr_target": 0.28476476669311523,
+      "H_mean": 1.400952734053135,
+      "H_std": 0.46799984466435995
+    },
+    {
+      "washout_type": "narrative",
+      "d_fr_target": 0.4717264473438263,
+      "H_mean": 1.5047264471650124,
+      "H_std": 0.5916416709342364
+    },
+    {
+      "washout_type": "technical",
+      "d_fr_target": 0.4421461522579193,
+      "H_mean": 1.7564919963479042,
+      "H_std": 0.6539487547582352
+    }
+  ],
+  "context_length": {
+    "max_position_embeddings": 2048,
+    "any_exceeds": false
+  },
+  "verdict": "POSITIVE -- representational hysteresis detected"
+}

@@ -1,0 +1,199 @@
+condition,layer,value,metric
+Bank (path-order),0,1.1920928955078125e-07,cosine_dist
+Bank (path-order),1,0.002885114401578903,cosine_dist
+Bank (path-order),2,0.0023761875927448273,cosine_dist
+Bank (path-order),3,0.0038020573556423187,cosine_dist
+Bank (path-order),4,0.005755335092544556,cosine_dist
+Bank (path-order),5,0.008679036051034927,cosine_dist
+Bank (path-order),6,0.010516103357076645,cosine_dist
+Bank (path-order),7,0.013416305184364319,cosine_dist
+Bank (path-order),8,0.016561370342969894,cosine_dist
+Bank (path-order),9,0.01769857481122017,cosine_dist
+Bank (path-order),10,0.020388968288898468,cosine_dist
+Bank (path-order),11,0.02131666988134384,cosine_dist
+Bank (path-order),12,0.0218452587723732,cosine_dist
+Bank (path-order),13,0.025897566229104996,cosine_dist
+Bank (path-order),14,0.02789042890071869,cosine_dist
+Bank (path-order),15,0.028206177055835724,cosine_dist
+Bank (path-order),16,0.02845575660467148,cosine_dist
+Bank (path-order),17,0.025052666664123535,cosine_dist
+Bank (path-order),18,0.022299785166978836,cosine_dist
+Bank (path-order),19,0.019658010452985764,cosine_dist
+Bank (path-order),20,0.017705846577882767,cosine_dist
+Bank (path-order),21,0.016425151377916336,cosine_dist
+Bank (path-order),22,0.014823798090219498,cosine_dist
+Bank (path-order),23,0.013147000223398209,cosine_dist
+Bank (path-order),24,0.011905759572982788,cosine_dist
+Bank (path-order),25,0.011159699410200119,cosine_dist
+Bank (path-order),26,0.010632872581481934,cosine_dist
+Bank (path-order),27,0.010386720299720764,cosine_dist
+Bank (path-order),28,0.01051444560289383,cosine_dist
+Bank (path-order),29,0.011555016040802002,cosine_dist
+Bank (path-order),30,0.010916389524936676,cosine_dist
+Bank (path-order),31,0.011070698499679565,cosine_dist
+Bank (path-order),32,0.011845909059047699,cosine_dist
+Ctrl A (diff topic),0,1.1920928955078125e-07,cosine_dist
+Ctrl A (diff topic),1,0.010903991758823395,cosine_dist
+Ctrl A (diff topic),2,0.02692781761288643,cosine_dist
+Ctrl A (diff topic),3,0.051590438932180405,cosine_dist
+Ctrl A (diff topic),4,0.08532844111323357,cosine_dist
+Ctrl A (diff topic),5,0.152362871915102,cosine_dist
+Ctrl A (diff topic),6,0.2022312805056572,cosine_dist
+Ctrl A (diff topic),7,0.26222288981080055,cosine_dist
+Ctrl A (diff topic),8,0.30211855471134186,cosine_dist
+Ctrl A (diff topic),9,0.3054906353354454,cosine_dist
+Ctrl A (diff topic),10,0.3062237314879894,cosine_dist
+Ctrl A (diff topic),11,0.30609676614403725,cosine_dist
+Ctrl A (diff topic),12,0.30441926419734955,cosine_dist
+Ctrl A (diff topic),13,0.29771075025200844,cosine_dist
+Ctrl A (diff topic),14,0.3027786761522293,cosine_dist
+Ctrl A (diff topic),15,0.2964814640581608,cosine_dist
+Ctrl A (diff topic),16,0.30262984707951546,cosine_dist
+Ctrl A (diff topic),17,0.28124118968844414,cosine_dist
+Ctrl A (diff topic),18,0.2732125148177147,cosine_dist
+Ctrl A (diff topic),19,0.2673066109418869,cosine_dist
+Ctrl A (diff topic),20,0.2639513313770294,cosine_dist
+Ctrl A (diff topic),21,0.2627956196665764,cosine_dist
+Ctrl A (diff topic),22,0.25609711557626724,cosine_dist
+Ctrl A (diff topic),23,0.24508259072899818,cosine_dist
+Ctrl A (diff topic),24,0.22947078570723534,cosine_dist
+Ctrl A (diff topic),25,0.23760263994336128,cosine_dist
+Ctrl A (diff topic),26,0.23513271287083626,cosine_dist
+Ctrl A (diff topic),27,0.23610296472907066,cosine_dist
+Ctrl A (diff topic),28,0.24917710945010185,cosine_dist
+Ctrl A (diff topic),29,0.27121660485863686,cosine_dist
+Ctrl A (diff topic),30,0.2515457943081856,cosine_dist
+Ctrl A (diff topic),31,0.2484356202185154,cosine_dist
+Ctrl A (diff topic),32,0.2710213214159012,cosine_dist
+Ctrl B (same-topic),0,1.1920928955078125e-07,cosine_dist
+Ctrl B (same-topic),1,0.006649643182754517,cosine_dist
+Ctrl B (same-topic),2,0.008724883198738098,cosine_dist
+Ctrl B (same-topic),3,0.013077775637308756,cosine_dist
+Ctrl B (same-topic),4,0.024179399013519287,cosine_dist
+Ctrl B (same-topic),5,0.03987289468447367,cosine_dist
+Ctrl B (same-topic),6,0.05258293946584066,cosine_dist
+Ctrl B (same-topic),7,0.07224578162034352,cosine_dist
+Ctrl B (same-topic),8,0.08681264519691467,cosine_dist
+Ctrl B (same-topic),9,0.09156188368797302,cosine_dist
+Ctrl B (same-topic),10,0.09758481880029042,cosine_dist
+Ctrl B (same-topic),11,0.09917966028054555,cosine_dist
+Ctrl B (same-topic),12,0.09788011014461517,cosine_dist
+Ctrl B (same-topic),13,0.09720034897327423,cosine_dist
+Ctrl B (same-topic),14,0.0989915281534195,cosine_dist
+Ctrl B (same-topic),15,0.10182885825634003,cosine_dist
+Ctrl B (same-topic),16,0.10336754719416301,cosine_dist
+Ctrl B (same-topic),17,0.09730602304140727,cosine_dist
+Ctrl B (same-topic),18,0.0952940583229065,cosine_dist
+Ctrl B (same-topic),19,0.0905879537264506,cosine_dist
+Ctrl B (same-topic),20,0.08990202347437541,cosine_dist
+Ctrl B (same-topic),21,0.09082779288291931,cosine_dist
+Ctrl B (same-topic),22,0.09065169095993042,cosine_dist
+Ctrl B (same-topic),23,0.08892765144507091,cosine_dist
+Ctrl B (same-topic),24,0.0864705244700114,cosine_dist
+Ctrl B (same-topic),25,0.09123687942822774,cosine_dist
+Ctrl B (same-topic),26,0.09258541961510976,cosine_dist
+Ctrl B (same-topic),27,0.09352352718512218,cosine_dist
+Ctrl B (same-topic),28,0.10080846150716145,cosine_dist
+Ctrl B (same-topic),29,0.11646024882793427,cosine_dist
+Ctrl B (same-topic),30,0.10790200034777324,cosine_dist
+Ctrl B (same-topic),31,0.10837496320406596,cosine_dist
+Ctrl B (same-topic),32,0.11725866297880809,cosine_dist
+Ctrl C (shuffled),0,1.1920928955078125e-07,cosine_dist
+Ctrl C (shuffled),1,0.0019572339951992035,cosine_dist
+Ctrl C (shuffled),2,0.0019811540842056274,cosine_dist
+Ctrl C (shuffled),3,0.003885410726070404,cosine_dist
+Ctrl C (shuffled),4,0.006082005798816681,cosine_dist
+Ctrl C (shuffled),5,0.008803162723779678,cosine_dist
+Ctrl C (shuffled),6,0.010278560221195221,cosine_dist
+Ctrl C (shuffled),7,0.012689892202615738,cosine_dist
+Ctrl C (shuffled),8,0.01614634320139885,cosine_dist
+Ctrl C (shuffled),9,0.017608605325222015,cosine_dist
+Ctrl C (shuffled),10,0.020386170595884323,cosine_dist
+Ctrl C (shuffled),11,0.02123003453016281,cosine_dist
+Ctrl C (shuffled),12,0.022090166807174683,cosine_dist
+Ctrl C (shuffled),13,0.026765290647745132,cosine_dist
+Ctrl C (shuffled),14,0.029123414307832718,cosine_dist
+Ctrl C (shuffled),15,0.029949292540550232,cosine_dist
+Ctrl C (shuffled),16,0.03084268420934677,cosine_dist
+Ctrl C (shuffled),17,0.02750939130783081,cosine_dist
+Ctrl C (shuffled),18,0.02555409073829651,cosine_dist
+Ctrl C (shuffled),19,0.02306417003273964,cosine_dist
+Ctrl C (shuffled),20,0.021010417491197586,cosine_dist
+Ctrl C (shuffled),21,0.019483298063278198,cosine_dist
+Ctrl C (shuffled),22,0.017798498272895813,cosine_dist
+Ctrl C (shuffled),23,0.016031183302402496,cosine_dist
+Ctrl C (shuffled),24,0.014622639864683151,cosine_dist
+Ctrl C (shuffled),25,0.01383420079946518,cosine_dist
+Ctrl C (shuffled),26,0.013242457062005997,cosine_dist
+Ctrl C (shuffled),27,0.013192921876907349,cosine_dist
+Ctrl C (shuffled),28,0.013800643384456635,cosine_dist
+Ctrl C (shuffled),29,0.01847340539097786,cosine_dist
+Ctrl C (shuffled),30,0.014615576714277267,cosine_dist
+Ctrl C (shuffled),31,0.013984035700559616,cosine_dist
+Ctrl C (shuffled),32,0.014575820416212082,cosine_dist
+Probe accuracy,0,0.5,accuracy
+Probe AUC,0,0.5,auc
+Probe accuracy,1,1.0,accuracy
+Probe AUC,1,1.0,auc
+Probe accuracy,2,1.0,accuracy
+Probe AUC,2,1.0,auc
+Probe accuracy,3,1.0,accuracy
+Probe AUC,3,1.0,auc
+Probe accuracy,4,1.0,accuracy
+Probe AUC,4,1.0,auc
+Probe accuracy,5,1.0,accuracy
+Probe AUC,5,1.0,auc
+Probe accuracy,6,1.0,accuracy
+Probe AUC,6,1.0,auc
+Probe accuracy,7,1.0,accuracy
+Probe AUC,7,1.0,auc
+Probe accuracy,8,1.0,accuracy
+Probe AUC,8,1.0,auc
+Probe accuracy,9,1.0,accuracy
+Probe AUC,9,1.0,auc
+Probe accuracy,10,1.0,accuracy
+Probe AUC,10,1.0,auc
+Probe accuracy,11,1.0,accuracy
+Probe AUC,11,1.0,auc
+Probe accuracy,12,1.0,accuracy
+Probe AUC,12,1.0,auc
+Probe accuracy,13,1.0,accuracy
+Probe AUC,13,1.0,auc
+Probe accuracy,14,1.0,accuracy
+Probe AUC,14,1.0,auc
+Probe accuracy,15,1.0,accuracy
+Probe AUC,15,1.0,auc
+Probe accuracy,16,1.0,accuracy
+Probe AUC,16,1.0,auc
+Probe accuracy,17,1.0,accuracy
+Probe AUC,17,1.0,auc
+Probe accuracy,18,1.0,accuracy
+Probe AUC,18,1.0,auc
+Probe accuracy,19,1.0,accuracy
+Probe AUC,19,1.0,auc
+Probe accuracy,20,1.0,accuracy
+Probe AUC,20,1.0,auc
+Probe accuracy,21,1.0,accuracy
+Probe AUC,21,1.0,auc
+Probe accuracy,22,1.0,accuracy
+Probe AUC,22,1.0,auc
+Probe accuracy,23,1.0,accuracy
+Probe AUC,23,1.0,auc
+Probe accuracy,24,1.0,accuracy
+Probe AUC,24,1.0,auc
+Probe accuracy,25,1.0,accuracy
+Probe AUC,25,1.0,auc
+Probe accuracy,26,1.0,accuracy
+Probe AUC,26,1.0,auc
+Probe accuracy,27,1.0,accuracy
+Probe AUC,27,1.0,auc
+Probe accuracy,28,1.0,accuracy
+Probe AUC,28,1.0,auc
+Probe accuracy,29,1.0,accuracy
+Probe AUC,29,1.0,auc
+Probe accuracy,30,1.0,accuracy
+Probe AUC,30,1.0,auc
+Probe accuracy,31,1.0,accuracy
+Probe AUC,31,1.0,auc
+Probe accuracy,32,1.0,accuracy
+Probe AUC,32,1.0,auc

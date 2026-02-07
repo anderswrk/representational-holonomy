@@ -1,0 +1,61 @@
+disambig_target,probe_category,probe_text,d_fr
+finance_disambig,finance, is offering competitive,1.063475489616394
+finance_disambig,finance, reported quarterly earnings,0.8559393882751465
+finance_disambig,finance, announced new interest,1.6681252717971802
+finance_disambig,finance, has increased its lending,2.2870380878448486
+finance_disambig,finance, stock price fell,2.722578763961792
+finance_disambig,finance, manager recommended,1.0184264183044434
+finance_disambig,finance, account balance showed,1.6601890325546265
+finance_disambig,finance, loan application was,1.307025671005249
+finance_disambig,nature, was covered in wildflowers,1.0419663190841675
+finance_disambig,nature, eroded after the heavy,0.8886470794677734
+finance_disambig,nature, provided habitat for,2.226921796798706
+finance_disambig,nature, along the river was,1.615743637084961
+finance_disambig,nature, of the creek was,1.5506771802902222
+finance_disambig,nature, was shaded by tall,1.0043976306915283
+finance_disambig,nature, flooded during the spring,2.3899781703948975
+finance_disambig,nature, slopes were covered in,1.2118282318115234
+finance_disambig,neutral, was located near the,1.845313549041748
+finance_disambig,neutral, had been there for,2.525123119354248
+finance_disambig,neutral, is one of the most,1.5521280765533447
+finance_disambig,neutral, was recently in the,0.9725196361541748
+finance_disambig,neutral, seemed different from,2.2108473777770996
+finance_disambig,neutral, that we visited last,1.936737060546875
+finance_disambig,neutral, is not what you,2.1415181159973145
+finance_disambig,neutral, could be described as,1.714941143989563
+finance_disambig,minimal, is,0.0
+finance_disambig,minimal, was,0.0
+finance_disambig,minimal, can be,1.2439022064208984
+finance_disambig,minimal, often,0.0
+finance_disambig,minimal, near,0.0006905339541845024
+finance_disambig,minimal, in the,0.7330430746078491
+nature_disambig,finance, is offering competitive,1.063475489616394
+nature_disambig,finance, reported quarterly earnings,0.8559393882751465
+nature_disambig,finance, announced new interest,1.6681252717971802
+nature_disambig,finance, has increased its lending,2.2870380878448486
+nature_disambig,finance, stock price fell,2.722578763961792
+nature_disambig,finance, manager recommended,1.0184264183044434
+nature_disambig,finance, account balance showed,1.6601890325546265
+nature_disambig,finance, loan application was,1.307025671005249
+nature_disambig,nature, was covered in wildflowers,1.0419663190841675
+nature_disambig,nature, eroded after the heavy,0.8886470794677734
+nature_disambig,nature, provided habitat for,2.226921796798706
+nature_disambig,nature, along the river was,1.615743637084961
+nature_disambig,nature, of the creek was,1.5506771802902222
+nature_disambig,nature, was shaded by tall,1.0043976306915283
+nature_disambig,nature, flooded during the spring,2.3899781703948975
+nature_disambig,nature, slopes were covered in,1.2118282318115234
+nature_disambig,neutral, was located near the,1.845313549041748
+nature_disambig,neutral, had been there for,2.525123119354248
+nature_disambig,neutral, is one of the most,1.5521280765533447
+nature_disambig,neutral, was recently in the,0.9725196361541748
+nature_disambig,neutral, seemed different from,2.2108473777770996
+nature_disambig,neutral, that we visited last,1.936737060546875
+nature_disambig,neutral, is not what you,2.1415181159973145
+nature_disambig,neutral, could be described as,1.714941143989563
+nature_disambig,minimal, is,0.0
+nature_disambig,minimal, was,0.0
+nature_disambig,minimal, can be,1.2439022064208984
+nature_disambig,minimal, often,0.0
+nature_disambig,minimal, near,0.0006905339541845024
+nature_disambig,minimal, in the,0.7330430746078491
